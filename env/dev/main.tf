@@ -6,7 +6,7 @@ terraform {
     bucket  = "tf-090546215541"
     key     = "lab-youtube-devopspro-aws-terraform/dev/lab-youtube-devopspro-aws-terraform.tfstate"
     region  = "us-west-2"
-    profile = "dev"
+    #profile = "dev"
   }
 
   #cloud {
@@ -25,7 +25,7 @@ terraform {
 }
 
 provider "aws" {
-  profile             = "dev"
+  #profile             = "dev"
   region              = "us-west-2"
   allowed_account_ids = ["090546215541"]
 
