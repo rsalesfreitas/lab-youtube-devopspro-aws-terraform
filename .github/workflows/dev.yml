@@ -1,4 +1,4 @@
-name: "terraform-eks-dev"
+name: "desenvolvimento"
 
 on:
   push:
