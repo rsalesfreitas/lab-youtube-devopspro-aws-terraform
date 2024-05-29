@@ -18,6 +18,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Terraform Destroy
+      - name: Terraform Init
+        working-directory: ./env/dev
+        run: terraform init        
+
+        - name: Terraform Destroy
         working-directory: ./env/dev
         run: terraform destroy --auto-approve
