@@ -14,5 +14,16 @@ module "vpc" {
 
   tags = merge(local.tags, {
     Name = "${local.network_configs.vpc-name}"
+    "kubernetes.io/cluster/${local.eks_configs.cluster-name}" = "shared"
   }) 
+
+  public_subnets_tags = {
+    "kubernetes.io/cluster/${local.eks_configs.cluster-name}" = "shared"
+    "kubernetes.io/role/elb" = 1
+  }
+
+  private_subnets_tags = {
+    "kubernetes.io/cluster/${local.eks_configs.cluster-name}" = "shared"
+    "kubernetes.io/role/internal-elb" = 1
+  }  
 }
