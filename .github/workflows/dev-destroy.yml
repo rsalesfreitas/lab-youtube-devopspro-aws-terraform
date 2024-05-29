@@ -1,4 +1,4 @@
-name: "desenvolvimento"
+name: "destroy-desenvolvimento"
 
 on:
   workflow_dispatch:
