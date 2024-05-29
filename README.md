@@ -57,3 +57,5 @@ Explicação do Fluxo
 Algumas evoluções que sugiro para o projeto:
 
 + Usar o DynamoDB junto com o S3 para evitar execução paralela do Terraform.
++ Verificar Funcionamento do draw.io para desenhos diretamente no VSCode.
++ Implementacao do Karpenter para otimização financeira do projeto.
